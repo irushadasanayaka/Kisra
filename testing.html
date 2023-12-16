@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking & Reservations</title>
+    <style>
+        /* Add your CSS styling here */
+    </style>
+</head>
+<body>
+
+<h1>Booking & Reservations</h1>
+
+<!-- Booking Form -->
+<form id="bookingForm">
+    <fieldset>
+        <div>
+            <label for="roomType">Room Type:</label>
+            <select id="roomType">
+                <option value="single">Single</option>
+                <option value="double">Double</option>
+                <option value="triple">Triple</option>
+            </select>
+        </div>
+        <div>
+            <label for="numAdults">Number of Adults:</label>
+            <input type="number" id="numAdults" min="1" value="1">
+        </div>
+        <div>
+            <label for="numChildren">Number of Children:</label>
+            <input type="number" id="numChildren" min="0" value="0">
+        </div>
+        
+        <div>
+            <label for="duration">Duration of Stay (in days):</label>
+            <input type="number" id="duration" min="1" value="1">
+        </div>
+        
+    
+        <div>
+            <label>Extra Requirements:</label>
+            <input type="checkbox" id="wifi"> <label for="wifi">WiFi</label>
+            <input type="checkbox" id="poolView"> <label for="poolView">Pool View</label>
+            <input type="checkbox" id="gardenView"> <label for="gardenView">Garden View</label>
+        </div>
+        
+    
+        <button type="button" onclick="bookNow()">Book Now</button>
+        <button type="button" onclick="bookAdventure()">Book Adventure</button>
+    
+        <label for="promoCode">Promo Code:</label>
+        <input type="text" id="promoCode">
+    
+        <label for="loyaltyPoints">Loyalty Points:</label>
+        <input type="text" id="loyaltyPoints" readonly>
+    
+        </form>
+    </fieldset>
+<!-- Booking Information -->
+<div id="bookingInfo">
+    <h2>Booking Information</h2>
+    <p>Current Booking(s): <span id="currentBooking"></span></p>
+    <p>Cost of Current Booking(s): <span id="currentBookingCost">0.00 LKR</span></p>
+    <p>Overall Booking: <span id="overallBooking"></span></p>
+    <p>Overall Cost of Booking: <span id="overallBookingCost">0.00 LKR</span></p>
+</div>
+
+<!-- Script Section -->
+<script>
+    // Add your ECMA Script (JavaScript) code here
+</script>
+
+</body>
+</html>

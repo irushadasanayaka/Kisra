@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css"/>
+        <script src="booking.js" defer></script>
+           
+    </head>
+    <body>
+        <header class="header">
+
+            <div class="navbar">
+                <img class="logo" src="Images/logo.png">
+    
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="hotels.html">Branches</a></li>
+                    <li><a href="Adventure.html">Adventures</a></li>
+                    <li><a href="Booking.html">Booking</a></li>
+                    <li><a href="resturants.html">Resturant & bar</a></li>
+                   
+    
+                </ul>
+    
+            </div>
+    
+        </header>
+        <br>
+
+        <main>
+            <section>
+                <div class="booking">
+
+                    <h1>Add your booking </h1>
+    
+                </div>
+                <forms>
+                    <fieldset>
+                        <div>
+                            <label for="dropdown">Select Hotel</label>
+                            <select id="dropdown" name="fruits">
+                                <option value="Select Hotel">Select Hotel</option>
+                                <option value="RAVEN Colombo">RAVEN Colombo</option>
+                                <option value="RAVEN Kandy">RAVEN Kandy</option>
+                                <option value="RAVEN Hikkaduwa">RAVEN Hikkaduwa</option>
+                                <option value="RAVEN Nuwara Eliya">RAVEN Nuwara Eliya</option>     
+                            </select>
+                        </div>
+    
+                        <div>
+                            <label for="roomtype">Room Type</label>
+                            <select id="typeofroom">
+                                <option value="single">Single</option>
+                                <option value="Double">Double</option>
+                                <option value="Thrible">Thrible</option>
+                            </select> 
+                        </div>
+
+                        <div>
+                            <label for="norooms">Number of rooms</label>
+                            <input type="number" id="norooms" name="norooms">
+                        </div>
+    
+                        <div>
+                            <label for="adults">Adult count</label>
+                            <input type="number" name="adults" id="adults" min="0" >
+                        </div>
+    
+                        <div>
+                            <label for="kids">Child count</label>
+                            <input type="number" name="kids" id="kids" min="0" >
+                        </div>
+    
+                        <div>
+                            <label for="checkins">Checkin Date</label>
+                            <input type="date" name="checkins" id="checkins">
+                        </div>
+    
+                        <div>
+                            <label for="days">Duration of staying</label>
+                            <input type="number" name="days" id="days" min="0" max="5">
+                        </div>
+                     
+                        <div>
+                            <label for="childmeals">Extra meals for childs</label>
+                            <input type="number" name="childmeals" id="childmeals">                    
+                        </div>
+    
+                        <div>
+                            <label>Extra bed</label>
+                            <input type="checkbox" name="extrabed" id="extrabed">
+                        </div>
+    
+                        <div>
+                            <label>View of room</label>
+                            <select>
+                                <option>Garden view</option>
+                                <option>Pool view</option>
+                            </select>
+                        </div>
+    
+                        <div>
+                            <label>Wifi</label>
+                            <input type="checkbox" name="wifi" id="wifi">
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Current price</legend>                                 
+                            <p id="price"></p>
+                    </fieldset>
+                    
+                </forms>
+            </section><br>
+
+            <section>
+                <h1>Adventure Booking</h1>
+                <form>
+                    <fieldset>
+                        <div>
+                            <label>Type</label>
+                            <select id="type" >
+                                <option value="Local">Local</option>
+                                <option value="forin">Forein</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="adults">Adult count</label>
+                            <input type="number"  id="adults2" min="0" max="10" required>
+                        </div>
+    
+                        <div>
+                            <label for="kids">Child count</label>
+                            <input type="number"  id="kids2" min="0" max="10" required>
+                        </div>
+
+                        <div>
+                            <label for="days">Duration of adventure</label>
+                            <input type="number" id="days2" min="0" max="6" required>
+                        </div>
+
+                        <div>
+                            <label>Guide for adults</label>
+                            <input type="checkbox" id="guidead" >
+                        </div>
+
+                        <div>
+                            <label>Guide for Childs</label>
+                            <input type="checkbox" id="guidechid">
+                        </div>
+
+                    </fieldset>
+                    <fieldset>
+                        <label for="promocode">Promocode</label>
+                        <input type="text" id="promocode" name="promocode">
+                    </fieldset>
+                </form>
+                    <button id="bookadventure">Book adventure</button>
+                    <button id="hotelbook">Book now</button>
+                    <input type="button" id="favourite" value="Add to favourite">
+                    <p id="output"></p>
+                    <input type="button" id="loyaltybtn" value="show loyalatypoints">
+            </section>
+            
+        
+
+        <div class="booking-image">
+            <img src="Imeges/booking.jpg">
+           
+        <br>
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Thank you very much for choosing our hotel to spend your <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;precious free time, and our professional staff is happy to<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; serve you as much as possible. Enjoy your precious time.<br>
+         Thank you so much.
+        </div>
+        </main>
+
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="footer-col">
+                        <h4>Go back</h4>
+                        <ul>
+                            <li><a href="webpage.html">Home</a></li>
+                            <li><a href="hotels.html">Branches</a></li>
+                            <li><a href="Adventure.html">Adventures</a></li>
+                            <li><a href="resturants.html">Resturant & Bar</a></li>
+                            <li><a href="contact.html">Contacts</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>online shop</h4>
+                        <ul>
+                            <li><a href="#">watch</a></li>
+                            <li><a href="#">bag</a></li>
+                            <li><a href="#">shoes</a></li>
+                            <li><a href="#">dress</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>follow us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </footer>
